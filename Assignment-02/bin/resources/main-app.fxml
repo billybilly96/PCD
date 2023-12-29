@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.Controller">
+  <children>
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="450.0" prefWidth="1000.0">
+      <center>
+        <FlowPane prefHeight="533.0" prefWidth="1000.0">
+          <children>
+            <VBox prefHeight="350.0" prefWidth="500.0">
+              <children>
+                <Label prefHeight="18.000099182128906" text="File scelti">
+                  <font>
+                    <Font name="System Bold" size="13.0" fx:id="x1" />
+                  </font>
+                  <VBox.margin>
+                    <Insets left="20.0" top="5.0" fx:id="x2" />
+                  </VBox.margin>
+                </Label>
+                <ListView fx:id="listViewFiles" prefHeight="200.0" prefWidth="200.0">
+                  <VBox.margin>
+                    <Insets left="20.0" right="10.0" top="5.0" />
+                  </VBox.margin>
+                </ListView>
+              </children>
+              <children>	
+              	<Label fx:id="numFile" prefHeight="17.0" prefWidth="251.0" text="">
+              	  <font>
+                    <Font name="System Bold" size="13.0" fx:id="x1" />
+                  </font>
+                  <VBox.margin>
+                    <Insets left="20.0" top="5.0" fx:id="x2" />
+                  </VBox.margin>
+              	</Label>
+              	<Label fx:id="status" prefHeight="17.0" prefWidth="251.0" text="">
+              	  <font>
+                    <Font name="System Bold" size="13.0"/>
+                  </font>
+                  <VBox.margin>
+                    <Insets left="20.0" top="5.0" />
+                  </VBox.margin>
+              	</Label>
+	            <Label fx:id="timeToComplete" prefHeight="17.0" prefWidth="250.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="4">
+	               <GridPane.margin>
+	                  <Insets left="10.0" />
+	               </GridPane.margin>
+	               <VBox.margin>
+                      <Insets bottom="5.0" left="20.0" top="5.0" fx:id="x3" />
+                   </VBox.margin>
+	            </Label>
+              </children>
+            </VBox>
+            <VBox prefHeight="390.0" prefWidth="500.0">
+              <children>
+                <Label font="$x1" prefWidth="142.0" text="Parole ricorrenti" VBox.margin="$x2" />
+                <TableView fx:id="tableView" prefHeight="371.0" prefWidth="460.0">
+                  <columns>
+                    <TableColumn fx:id="colWord" prefWidth="358.0" text="Parola" />
+                    <TableColumn fx:id="colOcc" prefWidth="100.0" text="Occorrenza" />
+                  </columns>
+                  <VBox.margin>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="6.0" />
+                  </VBox.margin>
+                </TableView>
+              </children>
+            </VBox>
+          </children>
+        </FlowPane>
+      </center>
+      <top>
+        <HBox prefHeight="60.0" prefWidth="1000.0">
+          <children>
+            <Button fx:id="search" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" style="-fx-font-size:14px;" text="Aggiungi file">
+              <HBox.margin>
+                <Insets bottom="15.0" left="40.0" right="20.0" top="15.0" />
+              </HBox.margin>
+            </Button>
+            <Button fx:id="delete" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" style="-fx-font-size:14px;" text="Elimina file">
+              <HBox.margin>
+                <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+              </HBox.margin>
+            </Button>
+            <ChoiceBox fx:id="solution" prefHeight="30.0" prefWidth="200.0" value="ex1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+              <HBox.margin>
+                <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+              </HBox.margin>
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:id="ex1" fx:value="ex1" />
+                     <String fx:id="ex1_1" fx:value="ex1.1" />
+                     <String fx:id="ex2" fx:value="ex2" />
+                     <String fx:id="ex3" fx:value="ex3" />
+                  </FXCollections>
+               </items>
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+            </ChoiceBox>
+            <Button fx:id="start" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" style="-fx-font-size:14px;-fx-background-color:#33FF00;" text="Start">
+              <HBox.margin>
+                <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+              </HBox.margin>
+            </Button>
+            <Button fx:id="stop" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" style="-fx-font-size:14px;-fx-background-color:RED;" text="Stop">
+              <HBox.margin>
+                <Insets bottom="15.0" left="20.0" right="40.0" top="15.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+[ 
+	{
+		"patch": "1",
+	   	"stub_guardians": [
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian1"
+	   		},
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian2"
+	   		},
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian3"
+	   		}
+	   	]
+	}, 
+	{
+		"patch": "2",
+	   	"stub_guardians": [
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian4"
+	   		},
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian5"
+	   		},
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian6"
+	   		}
+	   	]
+	},
+	{
+		"patch": "3",
+	   	"stub_guardians": [
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian7"
+	   		},
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian8"
+	   		},
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian9"
+	   		}
+	   	]
+	},
+		{
+		"patch": "4",
+	   	"stub_guardians": [
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian10"
+	   		},
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian11"
+	   		},
+	   		{
+	   			"host": "192.168.1.5",
+	   			"stub": "guardian12"
+	   		}
+	   	]
+	}
+	
+]
